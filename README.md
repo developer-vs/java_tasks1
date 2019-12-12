@@ -1,5 +1,15 @@
 # solved-tasks
 
+#### Remove String Spaces
+
 ```javascript
-const time = 12;
+function noSpace(x){  
+  let newStr = '';
+  for(let i=0; i<x.length; i++) {
+    if(x[i] !== ' ') {
+      newStr = newStr + x[i];
+    }
+  }
+  return newStr;
+}
 ```
