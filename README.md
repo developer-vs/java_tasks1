@@ -2,6 +2,23 @@
 
 #### Remove String Spaces
 
+##### Java
+```java
+class Kata {
+  static String noSpace(final String x) {
+    String output = "";
+    for(int i = 0; i < x.length(); i++) {
+      String character = String.valueOf(x.charAt(i));
+      if(!character.equals(" ")) {
+        output += character;
+      }
+    }
+    return output;
+  }
+}
+```
+
+##### JavaScript
 ```javascript
 function noSpace(x){  
   let newStr = '';
@@ -32,7 +49,6 @@ class Kata {
 }
 ```
 ##### JavaScript
-
 ```javascript
 function getMiddle(s)
 {
