@@ -84,3 +84,27 @@ public class Solution {
   }
 }
 ```
+
+#### Well of Ideas - Easy Version
+
+##### Java
+```java
+public class Kata {
+
+  public static String well(String[] x) {
+    int counter = 0;
+    for(int i=0; i < x.length; i++) {
+      if(x[i].equals("good")) {
+        counter++;
+      }
+    }
+    if(counter > 0 && counter <= 2 ) {
+      return "Publish!";
+    } else if(counter > 2) {
+      return "I smell a series!";
+    } else {
+      return "Fail!";
+    }
+  }
+}
+```
