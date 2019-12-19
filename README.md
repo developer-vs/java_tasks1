@@ -123,3 +123,17 @@ public class Kata {
   }
 }
 ```
+
+#### Numbers to Letters
+
+##### JavaScript
+```javascript
+function switcher(x){
+  let word = '';
+  let str = (" ?!abcdefghijklmnopqrstuvwxyz-").split("").reverse();
+  for(let i=0; i < x.length; i++) {
+    word += str[x[i]];
+  }
+  return word;
+}
+```
