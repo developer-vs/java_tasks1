@@ -137,3 +137,26 @@ function switcher(x){
   return word;
 }
 ```
+
+#### Debug the functions EASY
+
+##### JavaScript
+```javascript
+function multi(arr) {
+  let num = 1;
+  for(let i=0; i<arr.length; i++) {
+    num *= arr[i];
+  }
+  return num;
+}
+function add(arr) {
+  let num = 0;
+  for(let i=0; i<arr.length; i++) {
+    num += arr[i];
+  }
+  return num;
+}
+function reverse(str) {
+  return str.split('').reverse().join('');
+}
+```
