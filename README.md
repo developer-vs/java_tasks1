@@ -173,3 +173,20 @@ let arr = [];
   return arr;
 }
 ```
+
+##### Playing with cubes I
+
+##### Java
+```java
+public class Cube{
+  private int side;
+  
+  public int getSide() {
+    return side;
+  }
+
+  public void setSide(int side) {
+    this.side = side;
+  }  
+}
+```
