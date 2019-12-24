@@ -174,7 +174,7 @@ let arr = [];
 }
 ```
 
-##### Playing with cubes I
+#### Playing with cubes I
 
 ##### Java
 ```java
