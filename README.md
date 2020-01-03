@@ -233,3 +233,44 @@ public class EncapsulationDemo{
   }
 }
 ```
+
+#### Building blocks
+
+##### Java
+```java
+public class Block{
+  private int width;
+  private int length;
+  private int height;
+  private int volume;
+  private int surfaceArea;
+  
+	Block(int[] arr) {
+    this.width = arr[0];
+    this.length = arr[1];
+    this.height = arr[2];
+    this.volume = height * length * width;
+    this.surfaceArea = 2 * (length * width + length * height + width * height);
+  }
+  
+  public int getWidth() {
+    return width;
+  }
+  
+  public int getLength() {
+    return length;
+  }
+  
+  public int getHeight() {
+    return height;
+  }
+  
+  public int getVolume() {
+    return volume;
+  }
+  
+  public int getSurfaceArea() {
+    return surfaceArea;
+  }
+}
+```
