@@ -245,7 +245,7 @@ public class Block{
   private int volume;
   private int surfaceArea;
   
-	Block(int[] arr) {
+  Block(int[] arr) {
     this.width = arr[0];
     this.length = arr[1];
     this.height = arr[2];
@@ -271,6 +271,51 @@ public class Block{
   
   public int getSurfaceArea() {
     return surfaceArea;
+  }
+}
+```
+
+#### Two fighters, one winner.
+
+##### Java
+```java
+public class Kata {
+  public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
+  
+    String fighter = null;
+    
+    if(firstAttacker.equals(fighter1.name)) {
+      while(fighter2.health > 0 || fighter1.health > 0) {
+        fighter2.health -= fighter1.damagePerAttack;       
+        if(fighter2.health <= 0) {
+          fighter = fighter1.name;
+          break;
+        }
+        
+        fighter1.health -= fighter2.damagePerAttack;        
+        if(fighter1.health <= 0) {
+          fighter = fighter2.name;
+          break;
+        }
+      }        
+    }
+    
+    if(firstAttacker.equals(fighter2.name)) {
+      while(fighter1.health > 0 || fighter2.health > 0) {      
+        fighter1.health -= fighter2.damagePerAttack;        
+        if(fighter1.health <= 0) {
+          fighter = fighter2.name;
+          break;
+        }
+                        
+        fighter2.health -= fighter1.damagePerAttack;          
+        if(fighter2.health <= 0) {
+          fighter = fighter1.name;
+          break;
+        }
+      }
+    }    
+    return fighter;
   }
 }
 ```
