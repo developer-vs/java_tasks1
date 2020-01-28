@@ -332,7 +332,7 @@ public class Kata {
 
 ##### Java
 ```java
-ublic class ArraysTesting {
+public class ArraysTesting {
     
     public static void main(String[] args) {
         String[] a = { "Каждый "," охотник "," желает "," знать "," где "," сидит "," фазан "};
