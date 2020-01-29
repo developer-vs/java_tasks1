@@ -328,7 +328,7 @@ public class Kata {
 }
 ```
 
-#### How to swap array elements in reverse order in Java
+#### How to swap an array elements in reverse order in Java
 
 ##### Java
 ```java
@@ -372,6 +372,37 @@ public class ArraysTesting {
         }
         
         System.out.println();
+    }
+}
+```
+
+#### How to sort an array with Bubble Sort
+
+##### Java
+```java
+import java.util.Arrays;
+
+public class BubbleSort {
+
+    public static void main(String[] args) {
+        int[] arr = {4, 1, 6, 9, 2};
+
+        boolean isSorted = false;
+
+        while (!isSorted) {
+            isSorted = true;
+            // поскольку мы сравниваем i-й и i+1-й элементы,
+            // и чтобы мы не вышли за пределы массива, делаем на 1 цикл меньше.
+            for(int i = 0; i < arr.length - 1; i++) {
+                if(arr[i] > arr[i + 1]) {
+                    isSorted = false;
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
     }
 }
 ```
